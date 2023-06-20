@@ -1,5 +1,6 @@
 import Link from "next/link"
 import HamburgerMenuButton from "./HamburgerMenuButton"
+import { links } from "../data/links"
 
 export default function Navbar() {
 
@@ -13,21 +14,15 @@ export default function Navbar() {
 
                     <li className='sm:flex hidden'>
                         <div className='flex flex-row items-center gap-8 sm:gap-12'>
-                            <Link href="/">Home</Link>
-                            <Link href="/blog">Blog</Link>
-                            <Link href="/projects">Projects</Link>
-                            <Link href="/resources">Resources</Link>
+                            {links.map(link => 
+                                <Link key={link.id} href={link.href}>{link.value}</Link>    
+                            )}
                         </div>
                     </li>
 
                     <HamburgerMenuButton />
                 </ul>
             </nav>
-
-            {/* { isOpenedSideMenu 
-                ? <SideMenu closeSideMenu={closeSideMenu} /> 
-                : <></>
-            } */}
-    </header>
+        </header>
     )
 }

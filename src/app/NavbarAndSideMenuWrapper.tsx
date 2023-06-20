@@ -16,7 +16,7 @@ const defaultValues: defaultContextValue = {
 
 export const SideMenuContext = createContext<defaultContextValue>(defaultValues);
 
-export default function ExampleClientComponent({ children} : { children: React.ReactNode }) {
+export default function NavbarAndSideMenuWrapper({ children} : { children: React.ReactNode }) {
 
   const [isOpenedSideMenu, setIsOpenedSideMenu] = useState(false);
 

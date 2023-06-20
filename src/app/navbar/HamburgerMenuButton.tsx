@@ -3,7 +3,7 @@
 import React, { useContext } from 'react'
 import Image from 'next/image'
 import HamburgerMenuIconBlack from '../icons8-hamburger-menu-50.png'
-import { SideMenuContext } from '../ClientWrapper'
+import { SideMenuContext } from '../NavbarAndSideMenuWrapper'
 
 export default function HamburgerMenuButton() {
     const { isOpenedSideMenu, toggleSideMenu } = useContext(SideMenuContext)

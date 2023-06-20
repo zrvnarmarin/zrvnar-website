@@ -2,7 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from './navbar/Navbar'
 import SideMenu from './sideMenu/SideMenu'
-import ExampleClientComponent from './ClientWrapper'
+import NavbarAndSideMenuWrapper from './NavbarAndSideMenuWrapper'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-green-200`} >
-        <ExampleClientComponent>
+        <NavbarAndSideMenuWrapper>
           <Navbar />
           <SideMenu />
-        </ExampleClientComponent>
+        </NavbarAndSideMenuWrapper>
         <div>This div is shared across layouts in whole app!</div>
         {children}
       </body>
