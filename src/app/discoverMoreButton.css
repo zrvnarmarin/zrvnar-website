@@ -1,0 +1,51 @@
+.discover {
+    font-size: 25px;
+    width: 8em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    /* font-family: sans-serif; */
+    text-transform: capitalize;
+    position: relative;
+    transition: 0.5s;
+    margin: 0.8em;
+    cursor: pointer;
+}
+
+.discover::before,
+.discover::after {
+    content: '';
+    position: absolute;
+    width: 0em;
+    height: 0em;
+    background-color: gainsboro;
+    border-radius: 50%;
+    transition: 0.5s cubic-bezier(0.5, -0.5, 0.25, 1.5);
+    top: calc(50% - 0.6em / 2);
+}
+
+.discover::before {left: 0; z-index: -1;}
+.discover::after {right: 0; z-index: -2;}
+
+.discover:hover {
+    color: white;
+    border: none;
+    background: none;
+}
+
+.discover:hover::before,
+.discover:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background-color: dodgerblue;
+}
+
+.discover:hover::before {
+    top: 0;
+}
+
+.discover:hover::after {
+    right: -0.4em;
+    filter: brightness(0.8);
+}
