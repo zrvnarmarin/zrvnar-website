@@ -14,6 +14,7 @@ export default function Navbar() {
                                 <Link
                                     key={link.id}
                                     href={link.href}
+                                    className="text-xl font-semibold"
                                 >
                                     {link.value}
                                 </Link>    

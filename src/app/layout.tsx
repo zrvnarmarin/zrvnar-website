@@ -4,7 +4,7 @@ import Navbar from './navbar/Navbar'
 import SideMenu from './sideMenu/SideMenu'
 import NavbarAndSideMenuWrapper from './NavbarAndSideMenuWrapper'
 
-const pacifico = Sawarabi_Mincho({
+const swarabiMincho = Sawarabi_Mincho({
   weight: "400",
   display: "swap",
   variable: "--font-pacifico",
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${pacifico.className} mx-auto`} >
+      <body className={`${swarabiMincho.className} mx-auto`} >
         <NavbarAndSideMenuWrapper>
           <Navbar />
           <SideMenu />
