@@ -1,8 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
-import { usePathname } from "next/navigation"
-import HamburgerMenuIconWhite from '../icons8-hamburger-menu-50.png'
-import HamburgerMenuIconBlack from '../icons8-hamburger-menu-50 (1).png'
 import HamburgerMenuButton from "./HamburgerMenuButton"
 
 export default function Navbar() {
