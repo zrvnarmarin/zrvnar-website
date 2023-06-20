@@ -1,10 +1,15 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Sawarabi_Mincho } from 'next/font/google'
 import Navbar from './navbar/Navbar'
 import SideMenu from './sideMenu/SideMenu'
 import NavbarAndSideMenuWrapper from './NavbarAndSideMenuWrapper'
 
-const inter = Inter({ subsets: ['latin'] })
+const pacifico = Sawarabi_Mincho({
+  weight: "400",
+  display: "swap",
+  variable: "--font-pacifico",
+  subsets: ['latin']
+});
 
 export const metadata = {
   title: 'Marin Zrvnar',
@@ -18,12 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-green-200`} >
+      <body className={`${pacifico.className} mx-auto`} >
         <NavbarAndSideMenuWrapper>
           <Navbar />
           <SideMenu />
         </NavbarAndSideMenuWrapper>
-        <div>This div is shared across layouts in whole app!</div>
         {children}
       </body>
     </html>

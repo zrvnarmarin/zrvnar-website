@@ -5,17 +5,18 @@ import { links } from "../data/links"
 export default function Navbar() {
 
     return (
-        <header className='fixed w-full z-10 backdrop-blur-md'>
+        <header className='w-full z-10 py-8'>
             <nav>
-                <ul className='flex flex-row justify-between items-center'>
-                    <li className='flex flex-row items-center'>
-                        <Link href="/">Marin Zrvnar dev</Link>
-                    </li>
-
+                <ul className='flex flex-row justify-around items-center text-lg'>
                     <li className='sm:flex hidden'>
-                        <div className='flex flex-row items-center gap-8 sm:gap-12'>
+                        <div className='flex flex-row items-center gap-8 sm:gap-24'>
                             {links.map(link => 
-                                <Link key={link.id} href={link.href}>{link.value}</Link>    
+                                <Link
+                                    key={link.id}
+                                    href={link.href}
+                                >
+                                    {link.value}
+                                </Link>    
                             )}
                         </div>
                     </li>

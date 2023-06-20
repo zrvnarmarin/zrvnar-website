@@ -1,6 +1,6 @@
 "use client"
 
-import { createContext, useContext, useState } from 'react';
+import { createContext, useState } from 'react';
 
 interface defaultContextValue {
   isOpenedSideMenu: boolean;
@@ -24,7 +24,7 @@ export default function NavbarAndSideMenuWrapper({ children} : { children: React
   const toggleSideMenu = () => setIsOpenedSideMenu(prev => !prev);
 
   return (
-    <div className='bg-red-300'>
+    <div className=''>
       <SideMenuContext.Provider value={{ 
         isOpenedSideMenu: isOpenedSideMenu,
         toggleSideMenu: toggleSideMenu,
