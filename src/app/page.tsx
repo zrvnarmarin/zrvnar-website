@@ -6,9 +6,10 @@ export default function Home() {
   return (
     <div>
       
-      <div className={`flex flex-col gap-16 mt-72 w-full h-full`}>
-        <h1 className={`text-9xl font-normal text-center uppercase`}>Marin Žrvnar</h1>
-        <p className={`text-6xl text-center`}>Full-Stack Web Developer</p>
+      <div className={`flex flex-col gap-16 mt-72 w-full h-full relative`}>
+        <div className="absolute z-[0] w-[100%] h-[80%] top-0 blur-[96px] bg-gradient-to-r from-orange-100 to-yellow-100"></div>
+        <h1 className={`text-9xl font-normal text-center uppercase z-10`}>Marin Žrvnar</h1>
+        <p className={`text-6xl text-center z-10`}>Full-Stack Web Developer</p>
       </div>
 
       {/* <div className='bg-orange-200 mt-64 text-4xl text-center italic py-4'>
@@ -22,7 +23,7 @@ export default function Home() {
       </div>
 
       <div className='mt-80 relative'>
-        <div className='text-end pr-24 text-9xl uppercase text-orange-100 font-bold'>Projects</div>
+        <div className='text-end pr-24 text-9xl uppercase text-blue-100 font-bold'>Projects</div>
         <div className='absolute top-8 right-80 text-xl font-bold'>I take pride in delivering high-quality solutions that also leverage my skills as a developer. </div>
         <div className='absolute top-16 right-80 text-xl font-bold'>Every project is a striving to improve. Dive into some of my latest work.</div>
       </div>
@@ -30,13 +31,9 @@ export default function Home() {
         <div className='grid col-span-2 items-center justify-between px-24 mt-72'>
           <div className='col-start-1 col-end-2'>
             <div className='text-4xl font-bold mb-32'>01</div>
-            <div className='px-12 text-6xl uppercase font-black mb-16'>Apartmenify</div>
+            <div className='px-12 text-6xl uppercase font-black mb-16 underline decoration-blue-100 decoration-8 underline-offset-4'>Apartmenify</div>
             <div className='px-12 text-3xl font-bold mb-4'>Frontend Development</div>
             <div className='px-12 text-xl font-bold'>This application serves as the app for managing apartments.</div>
-          </div>
-
-          <div className='col-start-2 col-end-3'>
-            {/* <Image src={AuthorImage} alt="gbcfg" /> */}
           </div>
         </div>
 
@@ -46,10 +43,6 @@ export default function Home() {
             <div className='px-12 text-6xl uppercase font-black mb-16'>Apartmenify</div>
             <div className='px-12 text-3xl font-bold mb-4'>Frontend Development</div>
             <div className='px-12 text-xl font-bold'>This application serves as the app for managing apartments.</div>
-          </div>
-
-          <div className='col-start-2 col-end-3'>
-            {/* <Image src={AuthorImage} alt="gbcfg" /> */}
           </div>
         </div>
 
