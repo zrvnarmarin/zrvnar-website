@@ -1,7 +1,6 @@
 import Link from "next/link"
 import HamburgerMenuButton from "./HamburgerMenuButton"
-import { links } from "../data/links"
-import '../discoverMoreButton.css'
+import { links } from "../../data/links"
 
 // stavi discover klasu na linkove - testiraj!
 

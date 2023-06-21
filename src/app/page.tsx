@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import './discoverMoreButton.css'
-import './hover.css'
+import '../../public/styles/discoverMoreButton.css'
+import '../../public/styles/hover.css'
 
 export default function Home() {
   return (
@@ -62,11 +62,11 @@ export default function Home() {
 
       <div className='text-center mt-36 mb-24'>
         <Link href="/projects" 
-        className='bg-orange-300 px-24 py-8 text-white font-bold text-2xl discover'>Discover More</Link>
+        className='bg-blue-300 px-24 py-8 text-white font-bold text-2xl discover'>Discover More</Link>
       </div>
 
       <div className='mt-80 relative'>
-        <div className='text-start pl-24 text-9xl uppercase text-rose-100 font-bold'>Latest Blogs</div>
+        <div className='text-start pl-24 text-9xl uppercase text-rose-100 font-bold'>Blogs</div>
         <div className='absolute top-8 left-80 text-xl font-bold'>Full stack developer who passionately crafts clean, professional and reliable web products.</div>
         <div className='absolute top-16 left-80 text-xl font-bold'>With my help, you can elevate your digital presence for maximum impact.</div>
       </div> 

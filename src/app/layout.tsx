@@ -1,8 +1,11 @@
 import './globals.css'
 import { Sawarabi_Mincho } from 'next/font/google'
-import Navbar from './navbar/Navbar'
-import SideMenu from './sideMenu/SideMenu'
+import Navbar from './components/navbar/Navbar'
+import SideMenu from './components/sideMenu/SideMenu'
 import NavbarAndSideMenuWrapper from './NavbarAndSideMenuWrapper'
+import Image from 'next/image';
+import ArrowUpIcon from '../../public/icons/arrowUpIcon.png'
+import ScrollToTopButton from './components/scrollToTopButton/scrollToTopButton'
 
 const swarabiMincho = Sawarabi_Mincho({
   weight: "400",
@@ -23,12 +26,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${swarabiMincho.className} mx-auto`} >
+      <body className={`${swarabiMincho.className} mx-auto relative`} >
         <NavbarAndSideMenuWrapper>
           <Navbar />
           <SideMenu />
         </NavbarAndSideMenuWrapper>
         {children}
+        <ScrollToTopButton />
       </body>
     </html>
   )

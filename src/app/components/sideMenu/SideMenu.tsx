@@ -2,10 +2,10 @@
 
 import Link from "next/link"
 import { useContext } from "react"
-import { SideMenuContext } from "../NavbarAndSideMenuWrapper"
-import { links } from "../data/links"
+import { SideMenuContext } from "../../NavbarAndSideMenuWrapper"
+import { links } from "../../data/links"
 import CloseSideMenuButton from "./CloseSideMenuButton"
-import '../discoverMoreButton.css'
+import '../../../../public/styles/discoverMoreButton.css'
 
 export default function SideMenu() {
 
