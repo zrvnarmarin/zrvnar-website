@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import '../../public/styles/discoverMoreButton.css'
 import '../../public/styles/hover.css'
+import ReactImage from '../../public/images/react-context-api-4929b3703a1a7082d99b53eb1bbfc31f.png'
+import AuthorImage from '../../public/images/marin-removebg-preview.png'
 
 export default function Home() {
   return (
@@ -53,7 +55,7 @@ export default function Home() {
           <div className='px-12 py-8 text-6xl uppercase font-black mb-16 hover:cursor-pointer hover'>Apartmenify</div>
           <div className='px-12 text-3xl font-bold mb-4'>Frontend Development</div>
           <div className='px-12 text-xl font-bold'>This application serves as the app for managing apartments.</div>
-        </div>
+      </div>
 
       <div className='col-start-2 col-end-3'>
         {/* <Image src={AuthorImage} alt="gbcfg" /> */}
@@ -66,10 +68,248 @@ export default function Home() {
       </div>
 
       <div className='mt-80 relative'>
-        <div className='text-start pl-24 text-9xl uppercase text-rose-100 font-bold'>Blogs</div>
+        <div className='text-start pl-24 text-9xl uppercase text-green-100 font-bold'>Blogs</div>
         <div className='absolute top-8 left-80 text-xl font-bold'>Full stack developer who passionately crafts clean, professional and reliable web products.</div>
         <div className='absolute top-16 left-80 text-xl font-bold'>With my help, you can elevate your digital presence for maximum impact.</div>
       </div> 
+
+      {/* Blog container with blog cards*/}
+      <div className='grid grid-cols md:grid-cols-3 gap-12 mt-72 px-24'>
+        
+        {/* Blog card */}
+        <div className='flex flex-col gap-4 border-[2px] rounded-0 border-black text-justify'>
+
+          <div className='flex flex-col gap-6 p-12'>
+            <h1 className='text-4xl font-black hover:underline hover:underline-offset-4 decoration-green-200 decoration-4 cursor-pointer'>How will AI affect the Frontend Development</h1>
+            <div className='flex fle-row items-center justify-start gap-8'>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>React</span>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>Redux Toolkit</span>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>AI</span>
+            </div>
+            <p className='text-xl font-medium'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum incidunt
+              reiciendis quas libero nostrum quae eveniet, repudiandae ipsum. Officiis, vero.
+            </p>
+            <div className='flex flex-row items-center justify-between'>
+              <div className='flex flex-row gap-4'>
+                <Image className='rounded-full' width={50} height={50} alt='author_image' src={AuthorImage} />
+                <div className=''>
+                  <p>Marin Zrvnar</p>
+                  <p>2 days ago</p>
+                </div>
+              </div>
+              <div className='flex flex-col'>
+                <p>10 min read</p>
+                <p>37 comments</p>
+              </div>
+            </div>
+            <div className='text-center '>
+              <Link 
+                href="/" 
+                className='bg-green-300 py-2 px-8 text-white font-medium discover'
+              >
+                Read More
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Blog card */}
+        <div className='flex flex-col gap-4 border-[2px] rounded-0 border-black text-justify'>
+
+          <div className='flex flex-col gap-6 p-12'>
+            <h1 className='text-4xl font-black hover:underline hover:underline-offset-4 decoration-red-200 decoration-4'>How will AI affect the Frontend Development</h1>
+            <div className='flex fle-row items-center justify-start gap-8'>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>React</span>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>Redux Toolkit</span>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>AI</span>
+            </div>
+            <p className='text-xl font-medium'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum incidunt
+              reiciendis quas libero nostrum quae eveniet, repudiandae ipsum. Officiis, vero.
+            </p>
+            <div className='flex flex-row items-center justify-between'>
+              <div className='flex flex-row gap-4'>
+                <Image className='rounded-full' width={50} height={50} alt='author_image' src={AuthorImage} />
+                <div className=''>
+                  <p>Marin Zrvnar</p>
+                  <p>2 days ago</p>
+                </div>
+              </div>
+              <div className='flex flex-col'>
+                <p>10 min read</p>
+                <p>37 comments</p>
+              </div>
+            </div>
+            <div className='text-center '>
+              <Link 
+                href="/" 
+                className='bg-green-300 py-2 px-8 text-white font-medium discover'
+              >
+                Read More
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Blog card */}
+        <div className='flex flex-col gap-4 border-[2px] rounded-0 border-black text-justify'>
+
+          <div className='flex flex-col gap-6 p-12'>
+            <h1 className='text-4xl font-black hover:underline hover:underline-offset-4 decoration-red-200 decoration-4'>How will AI affect the Frontend Development</h1>
+            <div className='flex fle-row items-center justify-start gap-8'>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>React</span>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>Redux Toolkit</span>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>AI</span>
+            </div>
+            <p className='text-xl font-medium'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum incidunt
+              reiciendis quas libero nostrum quae eveniet, repudiandae ipsum. Officiis, vero.
+            </p>
+            <div className='flex flex-row items-center justify-between'>
+              <div className='flex flex-row gap-4'>
+                <Image className='rounded-full' width={50} height={50} alt='author_image' src={AuthorImage} />
+                <div className=''>
+                  <p>Marin Zrvnar</p>
+                  <p>2 days ago</p>
+                </div>
+              </div>
+              <div className='flex flex-col'>
+                <p>10 min read</p>
+                <p>37 comments</p>
+              </div>
+            </div>
+            <div className='text-center '>
+              <Link 
+                href="/" 
+                className='bg-green-300 py-2 px-8 text-white font-medium discover'
+              >
+                Read More
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Blog card */}
+        <div className='flex flex-col gap-4 border-[2px] rounded-0 border-black text-justify'>
+
+          <div className='flex flex-col gap-6 p-12'>
+            <h1 className='text-4xl font-black hover:underline hover:underline-offset-4 decoration-red-200 decoration-4'>How will AI affect the Frontend Development</h1>
+            <div className='flex fle-row items-center justify-start gap-8'>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>React</span>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>Redux Toolkit</span>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>AI</span>
+            </div>
+            <p className='text-xl font-medium'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum incidunt
+              reiciendis quas libero nostrum quae eveniet, repudiandae ipsum. Officiis, vero.
+            </p>
+            <div className='flex flex-row items-center justify-between'>
+              <div className='flex flex-row gap-4'>
+                <Image className='rounded-full' width={50} height={50} alt='author_image' src={AuthorImage} />
+                <div className=''>
+                  <p>Marin Zrvnar</p>
+                  <p>2 days ago</p>
+                </div>
+              </div>
+              <div className='flex flex-col'>
+                <p>10 min read</p>
+                <p>37 comments</p>
+              </div>
+            </div>
+            <div className='text-center '>
+              <Link 
+                href="/" 
+                className='bg-green-300 py-2 px-8 text-white font-medium discover'
+              >
+                Read More
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Blog card */}
+        <div className='flex flex-col gap-4 border-[2px] rounded-0 border-black text-justify'>
+
+          <div className='flex flex-col gap-6 p-12'>
+            <h1 className='text-4xl font-black hover:underline hover:underline-offset-4 decoration-red-200 decoration-4'>How will AI affect the Frontend Development</h1>
+            <div className='flex fle-row items-center justify-start gap-8'>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>React</span>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>Redux Toolkit</span>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>AI</span>
+            </div>
+            <p className='text-xl font-medium'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum incidunt
+              reiciendis quas libero nostrum quae eveniet, repudiandae ipsum. Officiis, vero.
+            </p>
+            <div className='flex flex-row items-center justify-between'>
+              <div className='flex flex-row gap-4'>
+                <Image className='rounded-full' width={50} height={50} alt='author_image' src={AuthorImage} />
+                <div className=''>
+                  <p>Marin Zrvnar</p>
+                  <p>2 days ago</p>
+                </div>
+              </div>
+              <div className='flex flex-col'>
+                <p>10 min read</p>
+                <p>37 comments</p>
+              </div>
+            </div>
+            <div className='text-center '>
+              <Link 
+                href="/" 
+                className='bg-green-300 py-2 px-8 text-white font-medium discover'
+              >
+                Read More
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Blog card */}
+        <div className='flex flex-col gap-4 border-[2px] rounded-0 border-black text-justify'>
+
+          <div className='flex flex-col gap-6 p-12'>
+            <h1 className='text-4xl font-black hover:underline hover:underline-offset-4 decoration-red-200 decoration-4'>How will AI affect the Frontend Development</h1>
+            <div className='flex fle-row items-center justify-start gap-8'>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>React</span>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>Redux Toolkit</span>
+              <span className='border-2 border-black px-4 py-2 text-black font-bold rounded-full'>AI</span>
+            </div>
+            <p className='text-xl font-medium'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum incidunt
+              reiciendis quas libero nostrum quae eveniet, repudiandae ipsum. Officiis, vero.
+            </p>
+            <div className='flex flex-row items-center justify-between'>
+              <div className='flex flex-row gap-4'>
+                <Image className='rounded-full' width={50} height={50} alt='author_image' src={AuthorImage} />
+                <div className=''>
+                  <p>Marin Zrvnar</p>
+                  <p>2 days ago</p>
+                </div>
+              </div>
+              <div className='flex flex-col'>
+                <p>10 min read</p>
+                <p>37 comments</p>
+              </div>
+            </div>
+            <div className='text-center '>
+              <Link 
+                href="/" 
+                className='bg-green-300 py-2 px-8 text-white font-medium discover'
+              >
+                Read More
+              </Link>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div className='text-center mt-36 mb-24'>
+        <Link href="/blogs" 
+        className='bg-green-300 px-24 py-8 text-white font-bold text-2xl discover'>Discover More</Link>
+      </div>
 
     </div>
   )
