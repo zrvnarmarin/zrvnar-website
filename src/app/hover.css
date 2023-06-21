@@ -1,0 +1,10 @@
+.hover {
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255) 50%, rgb(219, 234, 254, 1) 50%, rgb(219, 234, 254, 1));
+    background-size: 100% 200%;
+    /*trasition effect for background*/
+    transition: background .3s;
+  }
+  
+  .hover:hover {
+    background-position: 100% 100%;
+  }
