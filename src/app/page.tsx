@@ -87,8 +87,8 @@ export default function Home() {
 
           <div className='flex flex-col gap-6 p-12 relative z-10'>
             <h1 className='z-10 text-5xl text-center font-black hover:underline hover:underline-offset-4 decoration-green-200 decoration-4 cursor-pointer text-slate-800'>How will AI affect the web Development</h1>
-            <div className='flex fle-row items-center justify-start gap-8 relative z-10'>
-              <div className="absolute z-0 right-0 bottom-0 w-full h-full blur-xl bg-gradient-to-r from-green-50 to-green-50"></div>
+            <div className='flex fle-row items-center justify-center gap-8 relative z-10'>
+              <div className="absolute z-0 right-0 bottom-0 w-full h-full blur-xl bg-gradient-to-r from-green-100 to-green-100"></div>
               <span className='z-10 border-2 border-slate-800 px-4 py-2 text-slate-800 font-bold rounded-full'>React</span>
               <span className='z-10 border-2 border-slate-800 px-4 py-2 text-slate-800 font-bold rounded-full'>Redux Toolkit</span>
               <span className='z-10 border-2 border-slate-800 px-4 py-2 text-slate-800 font-bold rounded-full'>AI</span>
@@ -128,8 +128,14 @@ export default function Home() {
 
       <div className='text-center mt-36 mb-24'>
         <Link href="/blogs" 
-        className='bg-green-300 px-24 py-8 text-white font-bold text-2xl discover'>Discover More</Link>
+        className='bg-green-300 px-24 py-8 text-white font-bold text-2xl discover'>Read Latest</Link>
       </div>
+
+      <div className='mt-80 relative'>
+        <div className='text-start pl-24 text-9xl uppercase text-rose-100 font-bold'>Client Reviews</div>
+        <div className='absolute top-8 left-80 text-xl font-bold'>Full stack developer who passionately crafts clean, professional and reliable web products.</div>
+        <div className='absolute top-16 left-80 text-xl font-bold'>With my help, you can elevate your digital presence for maximum impact.</div>
+      </div> 
 
     </div>
   )
